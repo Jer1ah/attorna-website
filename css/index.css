@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main-left {
+  flex: 1;
+  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page121.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+}
+.main-right {
+  flex: 1;
+  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page122.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+}
+.main-right__container {
+  width: 80%;
+  margin: 7.5rem auto 0;
+}
+.main-right__container h3 {
+  color: #b1976b;
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  font-weight: 500;
+}
+.main-right__container h1 {
+  color: white;
+  font-size: 4.25rem;
+  width: 70%;
+  margin: 1rem 0 1rem;
+  font-family: "Brygada 1918", serif;
+  line-height: 4.5rem;
+  letter-spacing: 0.1rem;
+}
+.main-right__container p {
+  color: white;
+  opacity: 0.65;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+.main-right__container img {
+  margin: 2.5rem 0;
+}
+.main-right__social-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-right__social-listItem {
+  color: white;
+  font-size: 1.15rem;
+  margin-right: 1rem;
+}
+
+.navigation {
+  display: none;
+}
+.navigation__button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 55;
+  color: white;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=index.css.map */

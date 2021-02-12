@@ -1,0 +1,12 @@
+.navigation {
+    display: none;
+
+    &__button {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 55;
+        color: white;
+        font-size: 2rem;
+    }
+}

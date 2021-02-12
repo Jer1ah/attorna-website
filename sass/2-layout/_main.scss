@@ -1,0 +1,64 @@
+.main {
+    @include displayFlex(row, flex-start, flex-start);
+
+    &-left {
+        flex: 1;
+        background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page121.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 110vh;
+    }
+
+    &-right {
+        flex: 1;
+        background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page122.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 110vh;
+
+        &__container {
+            width: 80%;
+            margin: 7.5rem auto 0;
+
+            h3 {
+                color: $primary;
+                font-size: 1.25rem;
+                letter-spacing: .15rem;
+                font-weight: 500;
+            }
+
+            h1 {
+                color: white;
+                font-size: 4.25rem;
+                width: 70%;
+                margin: 1rem 0 1rem;
+                font-family: 'Brygada 1918', serif;
+                line-height: 4.5rem;
+                letter-spacing: .1rem;
+            }
+
+            p {
+                color: white;
+                opacity: .65;
+                font-size: 1.1rem;
+                line-height: 1.75rem;
+            }
+
+            img {
+                margin: 2.5rem 0;
+            }
+        }
+
+        &__social-list {
+            padding: 0;
+            list-style: none;
+            @include displayFlex(row, center, flex-start);
+
+            &Item {
+                color: white;
+                font-size: 1.15rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
