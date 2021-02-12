@@ -4,16 +4,18 @@
     &-left {
         flex: 1;
         background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page121.jpg');
-        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 110vh;
     }
 
     &-right {
         flex: 1;
         background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page122.jpg');
-        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 110vh;
 
         &__container {
@@ -58,6 +60,10 @@
                 color: white;
                 font-size: 1.15rem;
                 margin-right: 1rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
