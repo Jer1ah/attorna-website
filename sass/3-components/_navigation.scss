@@ -1,5 +1,5 @@
 .navigation {
-    display: none;
+    @include displayFlex(column, center, center);
 
     &__button {
         position: absolute;
@@ -11,7 +11,7 @@
     }
 
     &__dropdown {
-        background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75));
+        background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
         position: absolute;
         top: 0;
         left: 0;
@@ -21,4 +21,31 @@
         opacity: 0;
         transition: all .25s;
     }
+
+    &__list {
+        @include displayFlex(column, center, flex-start);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40rem;
+
+        &Item {
+            @include displayFlex(row, center, center);
+            padding: 1.25rem 0;
+            border-bottom: .1rem solid darken(white, 50%);
+            width: 100%;
+
+            a {
+                font-family: 'Brygada 1918', serif;
+                font-size: 2rem;
+                text-decoration: none;
+                color: white;
+                transition: all .15s;
+
+                &:hover {
+                    color: darken(white, 25%);
+                }
+            }
+        }
+    } 
 }

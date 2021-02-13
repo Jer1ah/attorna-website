@@ -81,7 +81,10 @@ body {
 }
 
 .navigation {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .navigation__button {
   position: absolute;
@@ -92,7 +95,7 @@ body {
   font-size: 2rem;
 }
 .navigation__dropdown {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   position: absolute;
   top: 0;
   left: 0;
@@ -101,6 +104,35 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: all 0.25s;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40rem;
+}
+.navigation__listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 0;
+  border-bottom: 0.1rem solid gray;
+  width: 100%;
+}
+.navigation__listItem a {
+  font-family: "Brygada 1918", serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.15s;
+}
+.navigation__listItem a:hover {
+  color: #bfbfbf;
 }
 
 /*# sourceMappingURL=index.css.map */
