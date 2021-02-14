@@ -1,0 +1,78 @@
+.practice {
+    @include displayFlex(row, flex-start, flex-start);
+    height: 50rem;
+
+    &-info {
+        flex: 1;
+        height: 100%;
+        background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/Page123.jpg');
+        position: relative;
+
+        &__container {
+            width: 75%;
+            margin: 0 auto 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+        h2 {
+            color: darken(white, 10%);
+            font-size: 2.5rem;
+            margin-bottom: .5rem;
+            font-family: 'Brygada 1918', serif;
+        }
+
+        .line {
+            height: .25rem;
+            width: 3rem;
+            background-color: darken(white, 10%);
+        }
+
+        &__list {
+            padding: 0;
+            list-style: none;
+            margin-top: 3rem;
+
+            &Item {
+                @include displayFlex(row, flex-start, flex-start);
+                margin-bottom: 2.25rem;
+
+                .fas {
+                    font-size: 3rem;
+                    color: $primary-light;
+                    margin-right: 1rem;
+                }
+
+                &-container {
+                    h3 {
+                        margin: 0 0 1rem;
+                        line-height: 1.9rem;
+                        font-size: 1.85rem;
+                        color: white;
+                        font-family: 'Brygada 1918', serif;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        color: white;
+                        opacity: .75;
+                        line-height: 1.75rem;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &-image {
+        flex: 1;
+        height: 100%;
+        background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page124.jpg');
+    }
+}
