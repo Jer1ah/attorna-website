@@ -379,6 +379,104 @@ body {
   object-fit: cover;
 }
 
+.portfolio {
+  position: relative;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.portfolio h4 {
+  color: #b1976b;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 7.5rem;
+}
+.portfolio h2 {
+  color: black;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Brygada 1918", serif;
+  margin: 0.5rem 0 0.5rem;
+}
+.portfolio .fa {
+  font-size: 1.5rem;
+  color: #b1976b;
+}
+.portfolio__list {
+  padding: 0;
+  list-style: none;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 75rem;
+}
+.portfolio__listItem {
+  width: 32%;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+.portfolio__listItem-image {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+}
+.portfolio__listItem-image img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+}
+.portfolio__listItem span {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 6.5rem;
+}
+.portfolio__listItem h5 {
+  color: black;
+  font-size: 1.25rem;
+  font-family: "Brygada 1918", serif;
+  font-weight: 600;
+}
+.portfolio__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  background-color: #b1976b;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 1.25rem 1.75rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.portfolio__button .fa {
+  color: white;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.portfolio__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;

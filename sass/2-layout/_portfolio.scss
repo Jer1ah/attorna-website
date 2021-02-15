@@ -1,0 +1,97 @@
+.portfolio {
+    position: relative;
+    height: 50rem;
+    @include displayFlex(column, center, flex-start);
+
+    h4 {
+        color: $primary;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-top: 7.5rem;
+    }
+
+    h2 {
+        color: black;
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: 'Brygada 1918', serif;
+        margin: .5rem 0 .5rem;
+    }
+
+    .fa {
+        font-size: 1.5rem;
+        color: $primary;
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+        margin: 2.5rem auto;
+        @include displayFlex(row, flex-start, space-between);
+        width: 75rem;
+    }
+
+    &__listItem {
+        width: 32%;
+        overflow: hidden;
+        border-radius: .25rem;
+
+        &-image {
+            position: relative;
+            width: 100%;
+            height: 15rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                position: absolute;
+            }
+        }
+
+        span {
+            background-color: white;
+            @include displayFlex(row, center, center);
+            height: 6.5rem;
+        }
+
+        h5 {
+            color: black;
+            font-size: 1.25rem;
+            font-family: 'Brygada 1918', serif;
+            font-weight: 600;
+        }
+    }
+
+    &__button {
+        @include displayFlex(row, center, space-between);
+        text-decoration: none;
+        color: white;
+        background-color: $primary;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        padding: 1.25rem 1.75rem;
+        border-radius: .25rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-top: 1rem;
+
+        .fa {
+            color: white;
+            font-size: 1rem;
+            margin-left: .5rem;
+        }
+    }
+
+    &__background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
