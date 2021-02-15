@@ -1,0 +1,58 @@
+.education {
+    @include displayFlex(row, flex-start, flex-start);
+    height: 50rem;
+
+    &__info {
+        background-color: $primary-dark;
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        &-container {
+            width: 75%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include displayFlex(column, flex-start, flex-start);
+        }
+
+        h2 {
+            color: white;
+            font-size: 2.3rem;
+            font-weight: 500;
+            font-family: 'Brygada 1918', serif;
+            margin-bottom: 2rem;
+        }
+
+        span {
+            color: white;
+            opacity: .75;
+            font-size: 1.15rem;
+            font-weight: 300;
+        }
+
+        .fa {
+            color: $primary;
+            font-size: 1.5rem;
+            margin: 1.1rem 0;
+        }
+    }
+
+    &__image {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+}

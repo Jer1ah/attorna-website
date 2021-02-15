@@ -35,7 +35,6 @@ const parallaxScrollController = (function() {
         const _aboutParallax = document.querySelector('.about__image');
         _aboutParallax.style.transform = `translateY(${_scrollPosition * .25 - 410}px)`;
 
-
     });
 
 }());
