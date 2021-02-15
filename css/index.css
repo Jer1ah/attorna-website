@@ -20,12 +20,18 @@ body {
   justify-content: flex-start;
 }
 .main-left {
-  flex: 1;
-  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page121.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 50%;
   height: 110vh;
+  position: relative;
+  overflow: hidden;
+}
+.main-left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .main-right {
   flex: 1;
@@ -105,6 +111,7 @@ body {
   color: #e6e6e6;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  font-weight: 500;
   font-family: "Brygada 1918", serif;
 }
 .practice-info .line {
@@ -147,9 +154,102 @@ body {
   margin-bottom: 0;
 }
 .practice-image {
-  flex: 1;
+  width: 50%;
   height: 100%;
-  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page124.jpg");
+  position: relative;
+  overflow: hidden;
+}
+.practice-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about {
+  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/layer-bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 55rem;
+}
+.about__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.1rem solid gray;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about h4 {
+  color: #b1976b;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.about h2 {
+  font-size: 3rem;
+  font-family: "Brygada 1918", serif;
+  font-weight: 500;
+  color: white;
+}
+.about .fa {
+  font-size: 1.5rem;
+  color: #b1976b;
+  margin-top: 0.5rem;
+}
+.about__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 2.5rem auto;
+}
+.about__info p {
+  display: inline-block;
+  width: 47.5%;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  color: white;
+  opacity: 0.75;
+}
+.about__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  width: 90%;
+  margin-top: 1rem;
+}
+.about__listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about__listItem h5 {
+  color: white;
+  font-size: 2.75rem;
+  font-weight: 500;
+  font-family: "Brygada 1918", serif;
+  margin-bottom: 0.25rem;
+}
+.about__listItem span {
+  font-size: 1rem;
+  color: #b1976b;
 }
 
 .navigation {
@@ -171,6 +271,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 50;
   width: 100vw;
   height: 100vh;
   visibility: hidden;

@@ -2,12 +2,19 @@
     @include displayFlex(row, flex-start, flex-start);
 
     &-left {
-        flex: 1;
-        background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page121.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 50%;
         height: 110vh;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &-right {

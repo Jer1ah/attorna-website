@@ -17,3 +17,22 @@ const navigationController = (function() {
     });
 
 }());
+
+
+// adding parallax scroll effect
+const parallaxScrollController = (function() {
+
+    window.addEventListener('scroll', () => {
+
+        let _scrollPosition = window.pageYOffset;
+
+        const _mainParallax = document.querySelector('.main-left img');
+        _mainParallax.style.transform = `translateY(${_scrollPosition * .25}px)`;
+
+        const _practiceParallax = document.querySelector('.practice-image img');
+        _practiceParallax.style.transform = `translateY(${_scrollPosition * .25 - 210}px)`;
+
+
+    });
+
+}());
