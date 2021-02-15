@@ -32,6 +32,9 @@ const parallaxScrollController = (function() {
         const _practiceParallax = document.querySelector('.practice-image img');
         _practiceParallax.style.transform = `translateY(${_scrollPosition * .25 - 210}px)`;
 
+        const _aboutParallax = document.querySelector('.about__image');
+        _aboutParallax.style.transform = `translateY(${_scrollPosition * .25 - 410}px)`;
+
 
     });
 
