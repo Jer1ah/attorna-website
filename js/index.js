@@ -38,3 +38,7 @@ const parallaxScrollController = (function() {
     });
 
 }());
+
+$('.testimonials__list').slick({
+    dots: true
+});

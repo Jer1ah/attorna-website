@@ -418,33 +418,53 @@ body {
   width: 32%;
   overflow: hidden;
   border-radius: 0.25rem;
+  position: relative;
+  height: 21rem;
 }
 .portfolio__listItem-image {
-  position: relative;
   width: 100%;
   height: 15rem;
+  overflow: hidden;
+  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/Family1-800x571.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
 }
-.portfolio__listItem-image img {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
+.portfolio__listItem-image:hover {
+  transform: scale(1.1);
 }
 .portfolio__listItem span {
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 6.5rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .portfolio__listItem h5 {
   color: black;
   font-size: 1.25rem;
   font-family: "Brygada 1918", serif;
   font-weight: 600;
+  margin-left: 2rem;
+  transition: all 0.25s;
+}
+.portfolio__listItem h5:hover {
+  color: #b1976b;
+  cursor: pointer;
+}
+.portfolio__listItem .second {
+  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/Giving-Million-Air-Its-Wings-800x571.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.portfolio__listItem .third {
+  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/Reinventing-the-Riverfront-800x571.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .portfolio__button {
   display: flex;
@@ -471,7 +491,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
   width: 100%;
   height: 100%;
   object-fit: cover;
