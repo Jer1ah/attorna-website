@@ -570,6 +570,7 @@ body {
 .testimonials__listItem .listItem-info img {
   width: 4rem;
   margin-right: 1rem;
+  border-radius: 50%;
 }
 .testimonials__listItem .listItem-info span {
   text-align: left;
@@ -610,6 +611,143 @@ body {
 .slick-dots li.slick-active button {
   background-color: #b1976b;
   outline: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 45rem;
+}
+.contact__info {
+  width: 50%;
+  height: 100%;
+  background-color: #efe9e0;
+}
+.contact__info-container {
+  width: 80%;
+  margin: 7.5rem auto 0;
+}
+.contact__info h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Brygada 1918", serif;
+}
+.contact__info i {
+  font-size: 1.75rem;
+  color: #b1976b;
+  margin-bottom: 1.75rem;
+}
+.contact__info span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.contact__info span i {
+  font-size: 1.1rem;
+  color: #b1976b;
+  margin-bottom: 0;
+  margin-right: 0.9rem;
+}
+.contact__info span h5 {
+  color: black;
+  font-weight: 500;
+  font-size: 1.15rem;
+  opacity: 0.75;
+}
+.contact__info p {
+  color: #666666;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.65rem;
+  width: 75%;
+  display: inline-block;
+  margin: 1rem 0 3rem;
+}
+.contact__info .subscribe input[type=text] {
+  border: none;
+  height: 3.5rem;
+  text-indent: 1rem;
+  width: 17.5rem;
+}
+.contact__info .subscribe input[type=text]::placeholder {
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+.contact__info .subscribe input[type=submit] {
+  border: none;
+  color: white;
+  background-color: #b1976b;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  height: 3.5rem;
+  padding: 0 0.75rem;
+  margin-left: -0.25rem;
+}
+.contact__form {
+  width: 50%;
+  height: 100%;
+}
+.contact__form-container {
+  width: 80%;
+  margin: 7.5rem auto;
+}
+.contact__form h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Brygada 1918", serif;
+}
+.contact__form i {
+  font-size: 1.75rem;
+  color: #b1976b;
+  margin-bottom: 1.75rem;
+}
+.contact__form form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact__form form input {
+  width: 48.5%;
+  margin-bottom: 0.75rem;
+  border: none;
+  background-color: #efe9e0;
+  height: 3.5rem;
+  text-indent: 1rem;
+  outline: none;
+}
+.contact__form form input::placeholder {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+.contact__form form textarea {
+  width: 100%;
+  height: 10rem;
+  border: none;
+  background-color: #efe9e0;
+  text-indent: 1rem;
+  padding-top: 1rem;
+  outline: none;
+}
+.contact__form form textarea::placeholder {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  font-family: "Lato", sans-serif;
+}
+.contact__form form input[type=submit] {
+  width: 100%;
+  margin-top: 0.75rem;
+  background-color: #b1976b;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
 }
 
 .navigation {
