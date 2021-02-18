@@ -24,7 +24,15 @@ const sideNavController = (function() {
 
     const _sideNavItems = document.querySelectorAll('.side-nav__listItem');
     const _mainSection = document.querySelector('.main');
+    const _practiceSection = document.querySelector('.practice');
+    const _aboutSection = document.querySelector('.about');
     const _bioSection = document.querySelector('.bio');
+    const _educationSection = document.querySelector('.education');
+    const _portfolioSection = document.querySelector('.portfolio');
+    const _testimonialsSection = document.querySelector('.testimonials');
+    const _contactSection = document.querySelector('.contact');
+
+    const _elementsList = [_mainSection, _practiceSection, _aboutSection, _bioSection, _educationSection, _portfolioSection, _testimonialsSection, _contactSection];
 
     window.addEventListener('scroll', () => {
 
@@ -32,11 +40,15 @@ const sideNavController = (function() {
             _sideNavItems[i].classList.remove('active');
         }
 
-        if( _mainSection.getBoundingClientRect().top <= 0 && _mainSection.getBoundingClientRect().bottom >= 0 ) {
-            _sideNavItems[0].classList.add('active');
-        } else if( _bioSection.getBoundingClientRect().top <= 0 && _bioSection.getBoundingClientRect().bottom >= 0 ) {
-            _sideNavItems[2].classList.add('active');
-        }
+        const _elementInView = (_element, _index) => {
+            if(_element.getBoundingClientRect().top <= 0 && _element.getBoundingClientRect().bottom >= 0) {
+                _sideNavItems[_index].classList.add('active');
+            }
+        };
+
+        _elementsList.forEach((_element, _index) => {
+            _elementInView(_element, _index);
+        });
 
     });
 }());
