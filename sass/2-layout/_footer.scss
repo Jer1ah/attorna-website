@@ -1,6 +1,7 @@
 .footer {
     background-color: #222;
     padding: .1rem;
+    position: relative;
 
     &__container {
         width: 90%;
@@ -21,6 +22,149 @@
             background-color: darken(white, 65%);
             width: 100%;
             height: .05rem;
+        }
+    }
+
+    &__info {
+        @include displayFlex(row, flex-start, space-between);
+        width: 60rem;
+        margin: 3.5rem auto 0;
+
+        &-left {
+            img {
+                height: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: white;
+                opacity: .75;
+                font-size: 1.15rem;
+                font-weight: 300;
+                width: 20rem;
+                line-height: 1.75rem;
+            }
+
+            .socials__list {
+                @include displayFlex(row, flex-start, flex-start);
+                list-style: none;
+                padding: 0;
+                margin-top: 1.25rem;
+
+                &Item {
+                    margin-right: 1rem;
+
+                    i {
+                        font-size: 1rem;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        &-center {
+            margin-bottom: 10rem;
+
+            h3 {
+                color: white;
+                font-size: 1.75rem;
+                font-weight: 500;
+                font-family: 'Brygada 1918', serif;
+                margin-bottom: 1rem;
+            }
+
+            .address {
+                p {
+                    color: white;
+                    opacity: .75;
+                    font-size: 1.15rem;
+                    font-weight: 300;
+                    line-height: 1.75rem;
+                }
+            }
+
+            .phone {
+                font-size: 1.15rem;
+                color: white;
+                font-weight: 300;
+                font-size: 1.15rem;
+                margin-top: 1.25rem;
+            }
+
+            .email {
+                font-size: 1.15rem;
+                color: $primary;
+                font-weight: 300;
+                font-weight: 1.15rem;
+                margin-top: .35rem;
+            }
+        }
+
+        &-right {
+            h3 {
+                color: white;
+                font-size: 1.75rem;
+                font-weight: 500;
+                font-family: 'Brygada 1918', serif;
+                margin-bottom: 1rem;
+            }
+
+            .practices__list {
+                @include displayFlex(column, flex-start, flex-start);
+                list-style: none;
+                padding: 0;
+
+                &Item {
+                    margin-bottom: .75rem;
+
+                    a {
+                        color: $primary;
+                        font-size: 1.15rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__end {
+        background-color: #111;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        @include displayFlex(row, center, space-between);
+        height: 7rem;
+
+        h4 {
+            color: white;
+            font-size: 1.15rem;
+            font-weight: 300;
+            opacity: .75;
+            margin-left: 2.5rem;
+        }
+    }
+
+    &__navigation {
+        margin-right: 2.5rem;
+
+        &__list {
+            @include displayFlex(row, center, flex-end);
+            padding: 0;
+            list-style: none;
+
+            &Item {
+                margin-left: 1rem;
+
+                a {
+                    color: white;
+                    font-weight: 400;
+                    opacity: .5;
+                    font-size: 1rem;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
