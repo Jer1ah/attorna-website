@@ -2,7 +2,7 @@
     @include displayFlex(column, center, center);
 
     &__button {
-        position: absolute;
+        position: fixed;
         top: 2rem;
         right: 2rem;
         z-index: 75;
@@ -12,7 +12,7 @@
 
     &__dropdown {
         background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 50;
@@ -33,12 +33,12 @@
         &Item {
             @include displayFlex(row, center, center);
             padding: 1.25rem 0;
-            border-bottom: .1rem solid darken(white, 50%);
+            border-bottom: .1rem solid darken(white, 65%);
             width: 100%;
 
             a {
                 font-family: 'Brygada 1918', serif;
-                font-size: 2rem;
+                font-size: 1.85rem;
                 text-decoration: none;
                 color: white;
                 transition: all .15s;

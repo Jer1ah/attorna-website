@@ -122,6 +122,10 @@
                         font-size: 1.15rem;
                         font-weight: 400;
                         text-decoration: none;
+
+                        &:hover {
+                            color: lighten($primary, 25%);
+                        }
                     }
                 }
             }
@@ -163,6 +167,11 @@
                     opacity: .5;
                     font-size: 1rem;
                     text-decoration: none;
+                    transition: all .15s;
+
+                    &:hover {
+                        opacity: .85;
+                    }
                 }
             }
         }

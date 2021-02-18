@@ -1,0 +1,39 @@
+.side-nav {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 250;
+
+    &__list {
+        @include displayFlex(column, flex-start, center);
+        list-style: none;
+        padding: 0;
+    }
+
+    &__listItem {
+        margin-bottom: .75rem;
+        border-radius: 50%;
+        @include displayFlex(row, center, center);
+        border: solid .1rem transparent;
+
+
+        .dot {
+            width: .55rem;
+            height: .55rem;
+            border-radius: 50%;
+            background-color: white;
+            opacity: .65;
+            display: inline-block;
+            margin: .15rem;
+        }
+    }
+}
+
+.active {
+    border: solid .1rem $primary;
+
+    .dot {
+        background-color: $primary;
+    }
+}

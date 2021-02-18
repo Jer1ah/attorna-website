@@ -19,6 +19,29 @@ const navigationController = (function() {
 }());
 
 
+// side-nav scroll functionality
+const sideNavController = (function() {
+
+    const _sideNavItems = document.querySelectorAll('.side-nav__listItem');
+    const _mainSection = document.querySelector('.main');
+    const _bioSection = document.querySelector('.bio');
+
+    window.addEventListener('scroll', () => {
+
+        for(let i = 0; i < _sideNavItems.length; i++) {
+            _sideNavItems[i].classList.remove('active');
+        }
+
+        if( _mainSection.getBoundingClientRect().top <= 0 && _mainSection.getBoundingClientRect().bottom >= 0 ) {
+            _sideNavItems[0].classList.add('active');
+        } else if( _bioSection.getBoundingClientRect().top <= 0 && _bioSection.getBoundingClientRect().bottom >= 0 ) {
+            _sideNavItems[2].classList.add('active');
+        }
+
+    });
+}());
+
+
 // adding parallax scroll effect
 const parallaxScrollController = (function() {
 
@@ -34,6 +57,15 @@ const parallaxScrollController = (function() {
 
         const _aboutParallax = document.querySelector('.about__image');
         _aboutParallax.style.transform = `translateY(${_scrollPosition * .25 - 410}px)`;
+
+        const _bioParallax = document.querySelector('.bio__image img');
+        _bioParallax.style.transform = `translateY(${_scrollPosition * .25 - 625}px)`;
+
+        const _educationParallax = document.querySelector('.education__image img');
+        _educationParallax.style.transform = `translateY(${_scrollPosition * .25 - 825}px)`;
+
+        const _testimonialsParallax = document.querySelector('.testimonials__background-image');
+        _testimonialsParallax.style.transform = `translateY(${_scrollPosition * .25 - 1225}px)`;
 
     });
 
