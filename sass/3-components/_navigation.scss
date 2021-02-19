@@ -2,10 +2,11 @@
     @include displayFlex(column, center, center);
 
     &__button {
-        position: fixed;
-        top: 2rem;
-        right: 2rem;
-        z-index: 1001;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2.25rem;
+        z-index: 1100;
         color: white;
         font-size: 2rem;
     }
@@ -49,4 +50,29 @@
             }
         }
     } 
+}
+
+.mobile-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: transparent;
+    z-index: 200;
+    transition: all .3s;
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2.25rem;
+        z-index: 250;
+        display: none;
+        transition: all .3s;
+
+        img {
+            height: 2rem;
+        }
+    }
 }

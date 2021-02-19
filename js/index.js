@@ -19,6 +19,27 @@ const navigationController = (function() {
 }());
 
 
+// mobile navigation fucntionality
+const mobileNavController = (function() {
+
+    const _mobileNav = document.querySelector('.mobile-navigation');
+    const _mobileNavLogo = document.querySelector('.mobile-navigation__logo');
+
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 25) {
+            _mobileNavLogo.style.display = "inline-block";
+            _mobileNav.style.backgroundColor = "#222";
+            _mobileNav.style.boxShadow = "0px 0px 10px 5px rgba(17,17,17,0.8)";
+        } else if(window.scrollY < 25) {
+            _mobileNavLogo.style.display = "none";
+            _mobileNav.style.backgroundColor = "transparent";
+            _mobileNav.style.boxShadow = "none";
+        }
+    });
+
+}());
+
+
 // side-nav scroll functionality
 const sideNavController = (function() {
 
