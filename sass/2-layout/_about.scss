@@ -47,7 +47,7 @@
     }
 
     &__info {
-        @include displayFlex(row, center, space-between);
+        @include displayFlex(row, flex-start, space-between);
         width: 90%;
         margin: 2.5rem auto;
 

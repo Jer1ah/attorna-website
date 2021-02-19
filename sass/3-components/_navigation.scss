@@ -2,11 +2,11 @@
     @include displayFlex(column, center, center);
 
     &__button {
-        position: absolute;
-        top: 50%;
+        position: fixed;
+        top: 2.5rem;
         transform: translateY(-50%);
         right: 2.25rem;
-        z-index: 1100;
+        z-index: 750;
         color: white;
         font-size: 2rem;
     }
@@ -16,7 +16,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 500;
         width: 100vw;
         height: 100vh;
         visibility: hidden;

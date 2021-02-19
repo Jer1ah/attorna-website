@@ -40,10 +40,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 110vh;
+  position: relative;
 }
 .main-right__container {
   width: 80%;
-  margin: 7.5rem auto 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .main-right__container h3 {
   color: #b1976b;
@@ -89,6 +93,14 @@ body {
   color: #b1976b;
 }
 
+@media (max-width: 1015px) {
+  .main-left {
+    display: none;
+  }
+  .main-right__container p {
+    width: 100%;
+  }
+}
 .practice {
   display: flex;
   flex-direction: row;
@@ -172,6 +184,11 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 1015px) {
+  .practice-image {
+    display: none;
+  }
+}
 .about {
   position: relative;
   height: 55rem;
@@ -221,7 +238,7 @@ body {
 .about__info {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 90%;
   margin: 2.5rem auto;
@@ -324,6 +341,11 @@ body {
   line-height: 1.75rem;
 }
 
+@media (max-width: 1015px) {
+  .bio__image {
+    display: none;
+  }
+}
 .education {
   display: flex;
   flex-direction: row;
@@ -382,6 +404,14 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 1015px) {
+  .education__info {
+    width: 100%;
+  }
+  .education__image {
+    display: none;
+  }
+}
 .portfolio {
   position: relative;
   height: 50rem;
@@ -946,11 +976,11 @@ body {
   justify-content: center;
 }
 .navigation__button {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 2.5rem;
   transform: translateY(-50%);
   right: 2.25rem;
-  z-index: 1100;
+  z-index: 750;
   color: white;
   font-size: 2rem;
 }
@@ -959,7 +989,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 500;
   width: 100vw;
   height: 100vh;
   visibility: hidden;

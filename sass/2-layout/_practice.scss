@@ -88,3 +88,11 @@
         }
     }
 }
+
+@media(max-width: 1015px) {
+    .practice {
+        &-image {
+            display: none;
+        }
+    }
+}

@@ -24,10 +24,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 110vh;
+        position: relative;
 
         &__container {
             width: 80%;
-            margin: 7.5rem auto 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
             h3 {
                 color: $primary;
@@ -74,6 +78,20 @@
                     cursor: pointer;
                     color: $primary;
                 }
+            }
+        }
+    }
+}
+
+@media(max-width: 1015px) {
+    .main {
+        &-left {
+            display: none;
+        }
+
+        &-right {
+            &__container p {
+                width: 100%;
             }
         }
     }
