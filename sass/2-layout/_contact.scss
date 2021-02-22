@@ -164,3 +164,23 @@
         }
     }
 }
+
+@media(max-width: 1015px) {
+    .contact {
+        height: auto;
+
+        flex-direction: column;
+
+        &__info {
+            width: 100%;
+
+            .subscribe {
+                margin-bottom: 5rem;
+            }
+        }
+
+        &__form {
+            width: 100%;
+        }
+    }
+}

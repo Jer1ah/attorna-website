@@ -14,9 +14,16 @@
             margin-bottom: 3rem;
             padding: 0;
             list-style: none;
+            width: 100%;
         }
 
-        &-listItem {}
+        &-listItem {
+            width: 19%;
+
+            img {
+                width: 100%;
+            }
+        }
 
         &-line {
             background-color: darken(white, 65%);
@@ -28,6 +35,7 @@
     &__info {
         @include displayFlex(row, flex-start, space-between);
         width: 60rem;
+        max-width: 100%;
         margin: 3.5rem auto 0;
 
         &-left {

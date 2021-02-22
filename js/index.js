@@ -97,9 +97,6 @@ const parallaxScrollController = (function() {
         const _educationParallax = document.querySelector('.education__image img');
         _educationParallax.style.transform = `translateY(${_scrollPosition * .25 - 825}px)`;
 
-        const _testimonialsParallax = document.querySelector('.testimonials__background-image');
-        _testimonialsParallax.style.transform = `translateY(${_scrollPosition * .25 - 1225}px)`;
-
     });
 
 }());

@@ -446,6 +446,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   width: 75rem;
+  max-width: 90%;
 }
 .portfolio__listItem {
   width: 32%;
@@ -539,6 +540,23 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 1015px) {
+  .portfolio {
+    height: auto;
+  }
+  .portfolio__list {
+    flex-direction: column;
+    align-items: center;
+    width: 37.5rem;
+  }
+  .portfolio__listItem {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  .portfolio__button {
+    margin-bottom: 5rem;
+  }
+}
 .testimonials {
   position: relative;
   height: 55rem;
@@ -807,6 +825,21 @@ body {
   color: #b1976b;
 }
 
+@media (max-width: 1015px) {
+  .contact {
+    height: auto;
+    flex-direction: column;
+  }
+  .contact__info {
+    width: 100%;
+  }
+  .contact__info .subscribe {
+    margin-bottom: 5rem;
+  }
+  .contact__form {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #222;
   padding: 0.1rem;
@@ -824,6 +857,13 @@ body {
   margin-bottom: 3rem;
   padding: 0;
   list-style: none;
+  width: 100%;
+}
+.footer__top-listItem {
+  width: 19%;
+}
+.footer__top-listItem img {
+  width: 100%;
 }
 .footer__top-line {
   background-color: #595959;
@@ -836,6 +876,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   width: 60rem;
+  max-width: 100%;
   margin: 3.5rem auto 0;
 }
 .footer__info-left img {
