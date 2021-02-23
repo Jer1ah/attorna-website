@@ -71,6 +71,7 @@
 
         &Item {
             @include displayFlex(column, center, center);
+            text-align: center;
 
             h5 {
                 color: white;
@@ -84,6 +85,69 @@
                 font-size: 1rem;
                 color: $primary;
             }
+        }
+    }
+}
+
+@media(max-width: 875px) {
+    .about {
+        &__listItem {
+            h5 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 795px) {
+    .about {
+        height: 70rem;
+
+        h2 {
+            text-align: center;
+        }
+
+        &__container {
+            height: 90%;
+            border: none;
+        }
+
+        &__info {
+            flex-direction: column;
+
+            p {
+                width: 100%;
+                margin-bottom: 1.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__list {
+            flex-direction: column;
+            margin-bottom: 0;
+
+            &Item {
+                margin-bottom: 2rem;
+
+                h5 {
+                    font-size: 2.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 615px) {
+    .about {
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        h4 {
+            font-size: 1rem;
         }
     }
 }
