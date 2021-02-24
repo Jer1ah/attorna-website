@@ -185,3 +185,33 @@
         }
     }
 }
+
+@media(max-width: 950px) {
+    .footer {
+        &__info {
+            flex-direction: column;
+
+            &-center {
+                margin: 3rem 0;
+            }
+
+            &-right {
+                margin-bottom: 6rem;
+            }
+        }
+
+        &__end {
+            flex-direction: column;
+            justify-content: center;
+            height: 7.5rem;
+
+            h4 {
+                margin: 0 0 .5rem 0;
+            }
+        }
+
+        &__navigation {
+            margin: 0;
+        }
+    }
+}

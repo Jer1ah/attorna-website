@@ -184,3 +184,11 @@
         }
     }
 }
+
+@media(max-width: 825px) {
+    .contact__form {
+        form input {
+            width: 100%;
+        }
+    }
+}

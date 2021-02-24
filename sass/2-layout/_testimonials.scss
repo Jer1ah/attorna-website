@@ -125,3 +125,15 @@
         outline: none;
     }
 }
+
+@media(max-width: 795px) {
+    .testimonials {
+        &__container {
+            border: none;
+        }
+
+        &__list {
+            width: 95%;
+        }
+    }
+}
