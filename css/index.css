@@ -1096,6 +1096,36 @@ body {
     margin: 0;
   }
 }
+@media (max-width: 775px) {
+  .footer__top-list {
+    flex-direction: column;
+  }
+  .footer__top-listItem {
+    width: 15rem;
+    max-width: 50%;
+    margin-bottom: 2rem;
+  }
+  .footer__top-listItem:last-child {
+    margin-bottom: 0;
+  }
+  .footer__end {
+    height: 10rem;
+  }
+  .footer__navigation {
+    text-align: center;
+    width: 50%;
+    margin-top: 0.5rem;
+  }
+  .footer__navigation__list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__navigation__listItem {
+    width: 40%;
+    margin: 0 0 0.25rem 0;
+  }
+}
 .navigation {
   display: flex;
   flex-direction: column;

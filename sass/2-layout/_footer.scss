@@ -215,3 +215,44 @@
         }
     }
 }
+
+@media(max-width: 775px) {
+    .footer {
+        &__top {
+            &-list {
+                flex-direction: column;
+            }
+
+            &-listItem {
+                width: 15rem;
+                max-width: 50%;
+                margin-bottom: 2rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__end {
+            height: 10rem;
+        }
+
+        &__navigation {
+            text-align: center;
+            width: 50%;
+            margin-top: .5rem;
+        
+            &__list {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                &Item {
+                    width: 40%;
+                    margin: 0 0 .25rem 0;
+                }
+            }
+        }
+    }
+}
