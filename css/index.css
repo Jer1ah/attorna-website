@@ -976,7 +976,106 @@ body {
   font-weight: 400;
   margin: 0;
 }
+.case-study p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  margin-top: 1.5rem;
+}
+.case-study .quote {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: #b1976b;
+  display: inline-block;
+  margin: 1.5rem 0 1rem;
+}
+.case-study .challenge, .case-study .process, .case-study .result {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.case-study .challenge h3, .case-study .process h3, .case-study .result h3 {
+  color: #b1976b;
+  font-family: "Brygada 1918", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.case-study .challenge-info, .case-study .process-info, .case-study .result-info {
+  width: 75%;
+  border-bottom: 0.05rem solid #bfbfbf;
+}
+.case-study .challenge-info__list, .case-study .process-info__list, .case-study .result-info__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.case-study .challenge-info p, .case-study .process-info p, .case-study .result-info p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  margin: 0;
+}
+.case-study .result-info {
+  border-bottom: none;
+  margin-bottom: 2.5rem;
+}
+.case-study .challenge {
+  border-top: 0.05rem solid #bfbfbf;
+  padding-top: 2.5rem;
+}
+.case-study .challenge-info__list {
+  margin-top: 2rem;
+}
+.case-study .challenge-info__listItem {
+  color: #b1976b;
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+.case-study .challenge-info__listItem:last-child {
+  margin-bottom: 0;
+}
+.case-study .process-info__listItem {
+  margin-bottom: 1.25rem;
+}
+.case-study .process-info__listItem h5 {
+  font-size: 1.15rem;
+  font-family: "Brygada 1918", serif;
+  font-size: 400;
+  opacity: 0.75;
+}
+.case-study .process-info__listItem p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.case-study .process-info__listItem:last-child {
+  margin-bottom: 0;
+}
 
+@media (max-width: 925px) {
+  .case-study__heading {
+    flex-direction: column;
+  }
+  .case-study__heading img {
+    width: 30rem;
+    max-width: 100%;
+  }
+  .case-study__heading-info {
+    margin-left: 0;
+  }
+  .case-study .challenge, .case-study .process, .case-study .result {
+    flex-direction: column;
+  }
+  .case-study .challenge h3, .case-study .process h3, .case-study .result h3 {
+    margin-bottom: 1.25rem;
+  }
+  .case-study .challenge-info, .case-study .process-info, .case-study .result-info {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #222;
   padding: 0.1rem;
@@ -1260,7 +1359,7 @@ body {
 }
 
 .mobile-navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

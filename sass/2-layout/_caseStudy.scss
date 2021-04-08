@@ -70,4 +70,130 @@
             }
         }
     }
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.7rem;
+        margin-top: 1.5rem;
+    }
+
+    .quote {
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.7rem;
+        color: $primary;
+        display: inline-block;
+        margin: 1.5rem 0 1rem;
+    }
+
+    .challenge, .process, .result {
+        @include displayFlex(row, flex-start, space-between);
+        margin-top: 2rem;
+
+        h3 {
+            color: $primary;
+            font-family: 'Brygada 1918', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        &-info {
+            width: 75%;
+            border-bottom: .05rem solid lighten(black, 75%);
+
+            &__list {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 300;
+                line-height: 1.7rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .result {
+        &-info {
+            border-bottom: none;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .challenge {
+        border-top: .05rem solid lighten(black, 75%);
+        padding-top: 2.5rem;
+
+        &-info__list {
+            margin-top: 2rem;
+       
+            &Item {
+                color: $primary;
+                font-size: 1.15rem;
+                font-weight: 400;
+                margin-bottom: .75rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .process {
+        &-info__list {
+            &Item {
+                margin-bottom: 1.25rem;
+
+                h5 {
+                    font-size: 1.15rem;
+                    font-family: 'Brygada 1918', serif;
+                    font-size: 400;
+                    opacity: .75;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 925px) {
+    .case-study {
+        &__heading {
+            flex-direction: column;
+
+            img {
+                width: 30rem;
+                max-width: 100%;
+            }
+
+            &-info {
+                margin-left: 0;
+            }
+        }
+
+        .challenge, .process, .result {
+            flex-direction: column;
+
+            h3 {
+                margin-bottom: 1.25rem;
+            }
+
+            &-info {
+                width: 100%;
+            }
+        }
+    }
 }
