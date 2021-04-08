@@ -19,7 +19,7 @@ const navigationController = (function() {
 }());
 
 
-// mobile navigation fucntionality
+// mobile navigation functionality
 const mobileNavController = (function() {
 
     const _mobileNav = document.querySelector('.mobile-navigation');

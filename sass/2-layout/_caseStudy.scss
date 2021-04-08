@@ -1,0 +1,73 @@
+.header__heading {
+    background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page-title-background.jpg');
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin-top: 7rem;
+        font-size: 3.25rem;
+        color: white;
+        font-family: 'Brygada 1918', serif;
+    }
+
+    h4 {
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-top: .75rem;
+    }
+}
+
+.case-study {
+    width: 65rem;
+    max-width: 90%;
+    margin: 2.5rem auto;
+
+    &__heading {
+        @include displayFlex(row, flex-start, space-between);
+
+        img {
+            height: 20rem;
+        }
+
+        &-info {
+            @include displayFlex(column, flex-start, flex-start);
+            margin-left: 2.5rem;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $primary;
+                font-family: 'Brygada 1918', serif;
+                font-weight: 600;
+                margin-top: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin: 1rem 0;
+                font-weight: 300;
+            }
+
+            span {
+                @include displayFlex(row, center, flex-start);
+                display: inline-flex;
+                margin-bottom: 1rem;
+
+                h5 {
+                    font-size: 1.1rem;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

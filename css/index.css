@@ -904,6 +904,79 @@ body {
     width: 100%;
   }
 }
+.header__heading {
+  background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/page-title-background.jpg");
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__heading h1 {
+  margin-top: 7rem;
+  font-size: 3.25rem;
+  color: white;
+  font-family: "Brygada 1918", serif;
+}
+.header__heading h4 {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 0.75rem;
+}
+
+.case-study {
+  width: 65rem;
+  max-width: 90%;
+  margin: 2.5rem auto;
+}
+.case-study__heading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.case-study__heading img {
+  height: 20rem;
+}
+.case-study__heading-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 2.5rem;
+}
+.case-study__heading-info h3 {
+  font-size: 1.5rem;
+  color: #b1976b;
+  font-family: "Brygada 1918", serif;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.case-study__heading-info p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+.case-study__heading-info span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  display: inline-flex;
+  margin-bottom: 1rem;
+}
+.case-study__heading-info span h5 {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+.case-study__heading-info span p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
 .footer {
   background-color: #222;
   padding: 0.1rem;
@@ -1145,7 +1218,7 @@ body {
   font-size: 2rem;
 }
 .navigation__dropdown {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background: #0d0d0d;
   position: fixed;
   top: 0;
   left: 0;
@@ -1187,7 +1260,7 @@ body {
 }
 
 .mobile-navigation {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
