@@ -10,6 +10,7 @@
         font-size: 3.25rem;
         color: white;
         font-family: 'Brygada 1918', serif;
+        text-align: center;
     }
 
     h4 {
@@ -194,6 +195,26 @@
             &-info {
                 width: 100%;
             }
+        }
+    }
+}
+
+@media(max-width: 850px) {
+    .header__heading {
+        h1 {
+            font-size: 2.75rem;
+        }
+    }
+}
+
+@media(max-width: 750px) {
+    .header__heading {
+        h1 {
+            font-size: 2.25rem;
+            margin-top: 8rem;
+        }
+        h4 {
+            font-size: .85rem;
         }
     }
 }

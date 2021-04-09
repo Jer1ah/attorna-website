@@ -518,8 +518,9 @@ body {
 .portfolio__listItem-image:hover {
   transform: scale(1.1);
 }
-.portfolio__listItem span {
+.portfolio__listItem a {
   background-color: white;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -550,36 +551,6 @@ body {
   background: url("https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/Reinventing-the-Riverfront-800x571.jpg");
   background-size: cover;
   background-position: center;
-}
-.portfolio__button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
-  color: white;
-  background-color: #b1976b;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  padding: 1.15rem 1.65rem;
-  border-radius: 0.25rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-top: 1rem;
-  transition: all 0.2s;
-  border: 0.2rem solid #b1976b;
-}
-.portfolio__button .fa {
-  color: white;
-  font-size: 1rem;
-  margin-left: 0.5rem;
-}
-.portfolio__button:hover {
-  background-color: transparent;
-  color: #b1976b;
-}
-.portfolio__button:hover .fa {
-  color: #b1976b;
 }
 .portfolio__background-image {
   position: absolute;
@@ -916,6 +887,7 @@ body {
   font-size: 3.25rem;
   color: white;
   font-family: "Brygada 1918", serif;
+  text-align: center;
 }
 .header__heading h4 {
   color: white;
@@ -1074,6 +1046,20 @@ body {
   }
   .case-study .challenge-info, .case-study .process-info, .case-study .result-info {
     width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .header__heading h1 {
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 750px) {
+  .header__heading h1 {
+    font-size: 2.25rem;
+    margin-top: 8rem;
+  }
+  .header__heading h4 {
+    font-size: 0.85rem;
   }
 }
 .footer {

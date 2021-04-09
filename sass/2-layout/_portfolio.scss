@@ -53,8 +53,9 @@
             }
         }
 
-        span {
+        a {
             background-color: white;
+            text-decoration: none;
             @include displayFlex(row, center, flex-start);
             height: 6.5rem;
             position: absolute;
@@ -86,37 +87,6 @@
             background: url('https://demo.goodlayers.com/attorna/demo3/wp-content/uploads/2019/02/Reinventing-the-Riverfront-800x571.jpg');
             background-size: cover;
             background-position: center;
-        }
-    }
-
-    &__button {
-        @include displayFlex(row, center, space-between);
-        text-decoration: none;
-        color: white;
-        background-color: $primary;
-        font-size: 1rem;
-        letter-spacing: .1rem;
-        padding: 1.15rem 1.65rem;
-        border-radius: .25rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        margin-top: 1rem;
-        transition: all .2s;
-        border: .2rem solid $primary;
-
-        .fa {
-            color: white;
-            font-size: 1rem;
-            margin-left: .5rem;
-        }
-
-        &:hover {
-            background-color: transparent;
-            color: $primary;
-
-            .fa {
-                color: $primary;
-            }
         }
     }
 
