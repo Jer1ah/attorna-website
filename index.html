@@ -290,6 +290,7 @@
                 <div class="subscribe">
                     <input type="text" placeholder="Your Email Address">
                     <input type="submit" value="SUBSCRIBE">
+                    <h3>Email Submitted!</h3>
                 </div> <!-- .subscribe end --> 
             </div> <!-- .contact__info-container end -->
         </div> <!-- .contact__info end -->
@@ -297,14 +298,15 @@
             <div class="contact__form-container">
                 <h2>Free Consultation</h2>
                 <i class="fa fa-grip-lines icon"></i>
-                <form action="#">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone">
-                    <input type="text" placeholder="Corporate Law">
-                    <input type="text" placeholder="Email">
-                    <textarea placeholder="Message"></textarea>
-                    <input type="submit" value="SUBMIT NOW">
+                <form onsubmit="event.preventDefault()">
+                    <input type="text" class="contact__form-input" placeholder="Name">
+                    <input type="text" class="contact__form-input" placeholder="Phone">
+                    <input type="text" class="contact__form-input" placeholder="Corporate Law">
+                    <input type="text" class="contact__form-input" placeholder="Email">
+                    <textarea class="contact__form-input" placeholder="Message"></textarea>
+                    <input type="submit" class="contact__form-button" value="SUBMIT NOW">
                 </form>
+                <h3>Form Submitted!</h3>
             </div> <!-- .contact__form-container end -->
         </div> <!-- .contact__form end -->
     </div> <!-- .contact end -->
@@ -415,6 +417,7 @@
     <script src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
     <script src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
     <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
