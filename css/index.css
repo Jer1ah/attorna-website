@@ -146,7 +146,7 @@ body {
   justify-content: flex-start;
   margin-bottom: 2.25rem;
 }
-.practice-info__listItem .fas {
+.practice-info__listItem .icon {
   font-size: 3rem;
   color: #c3ae8c;
   margin-right: 1rem;
@@ -235,7 +235,7 @@ body {
   font-weight: 500;
   color: white;
 }
-.about .fa {
+.about .icon {
   font-size: 1.5rem;
   color: #b1976b;
   margin-top: 0.5rem;
@@ -372,7 +372,7 @@ body {
   font-weight: 500;
   font-family: "Brygada 1918", serif;
 }
-.bio__info .fa {
+.bio__info .icon {
   color: #b1976b;
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
@@ -434,7 +434,7 @@ body {
   font-size: 1.15rem;
   font-weight: 300;
 }
-.education__info .fa {
+.education__info .icon {
   color: #b1976b;
   font-size: 1.5rem;
   margin: 1.1rem 0;
@@ -484,7 +484,7 @@ body {
   font-family: "Brygada 1918", serif;
   margin: 0.5rem 0 0.5rem;
 }
-.portfolio .fa {
+.portfolio .icon {
   font-size: 1.5rem;
   color: #b1976b;
 }
@@ -619,7 +619,7 @@ body {
   font-weight: 500;
   color: white;
 }
-.testimonials .fa {
+.testimonials .icon {
   font-size: 1.5rem;
   color: #b1976b;
   margin-top: 0.75rem;
@@ -632,7 +632,7 @@ body {
   width: 100%;
   text-align: center;
 }
-.testimonials__listItem .fas {
+.testimonials__listItem .icon {
   color: #b1976b;
   font-size: 4rem;
 }
@@ -725,7 +725,7 @@ body {
   font-weight: 600;
   font-family: "Brygada 1918", serif;
 }
-.contact__info i {
+.contact__info .icon {
   font-size: 1.75rem;
   color: #b1976b;
   margin-bottom: 1.75rem;
@@ -737,7 +737,7 @@ body {
   justify-content: flex-start;
   margin-bottom: 1rem;
 }
-.contact__info span i {
+.contact__info span .icon {
   font-size: 1.1rem;
   color: #b1976b;
   margin-bottom: 0;
@@ -799,7 +799,7 @@ body {
   font-weight: 600;
   font-family: "Brygada 1918", serif;
 }
-.contact__form i {
+.contact__form .icon {
   font-size: 1.75rem;
   color: #b1976b;
   margin-bottom: 1.75rem;
@@ -1124,10 +1124,11 @@ body {
 }
 .footer__info-left .socials__listItem {
   margin-right: 1rem;
-}
-.footer__info-left .socials__listItem i {
-  font-size: 1rem;
   color: #b1976b;
+  font-size: 1rem;
+}
+.footer__info-left .socials__listItem:hover {
+  cursor: pointer;
 }
 .footer__info-center {
   margin-bottom: 10rem;
@@ -1298,7 +1299,7 @@ body {
   top: 2.5rem;
   transform: translateY(-50%);
   right: 2.25rem;
-  z-index: 750;
+  z-index: 550;
   color: white;
   font-size: 2rem;
 }

@@ -18,7 +18,7 @@
             font-family: 'Brygada 1918', serif;
         }
 
-        i {
+        .icon {
             font-size: 1.75rem;
             color: $primary;
             margin-bottom: 1.75rem;
@@ -28,7 +28,7 @@
             @include displayFlex(row, center, flex-start);
             margin-bottom: 1rem;
 
-            i {
+            .icon {
                 font-size: 1.1rem;
                 color: $primary;
                 margin-bottom: 0;
@@ -103,7 +103,7 @@
             font-family: 'Brygada 1918', serif;
         }
 
-        i {
+        .icon {
             font-size: 1.75rem;
             color: $primary;
             margin-bottom: 1.75rem;
