@@ -1316,6 +1316,9 @@ body {
   color: white;
   font-size: 2rem;
 }
+.navigation__button .icon {
+  color: white;
+}
 .navigation__dropdown {
   background: #0d0d0d;
   position: fixed;
