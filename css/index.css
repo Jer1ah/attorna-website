@@ -782,6 +782,7 @@ body {
   outline: none;
   transition: all 0.2s;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 .contact__info .subscribe input[type=submit]:hover {
   background-color: #887048;
@@ -862,6 +863,7 @@ body {
   font-size: 0.9rem;
   border: 0.2rem solid #b1976b;
   transition: all 0.2s;
+  -webkit-appearance: none;
 }
 .contact__form form input[type=submit]:hover {
   cursor: pointer;
