@@ -79,6 +79,7 @@
                 margin-left: -.25rem;
                 outline: none;
                 transition: all .2s;
+                border-radius: 0;
 
                 &:hover {
                     background-color: darken($primary, 15%);
@@ -204,6 +205,24 @@
     .contact__form {
         form input {
             width: 100%;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .contact__info {
+        .subscribe {
+            @include displayFlex(column, flex-start, flex-start);
+
+            input[type="text"] {
+                width: 100%;
+                margin-bottom: .75rem;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 }
